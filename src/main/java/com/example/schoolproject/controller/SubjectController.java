@@ -1,4 +1,4 @@
-package com.example.schoolproject.model;
+package com.example.schoolproject.controller;
 
 import com.example.schoolproject.entity.Subject;
 import com.example.schoolproject.service.SubjectServiceImpl;
@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("api/v1/subjects")
 public class SubjectController {
 
-    private final SubjectServiceImpl service;
+    private SubjectServiceImpl service;
 
     public SubjectController(SubjectServiceImpl service) {
         this.service = service;

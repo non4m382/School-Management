@@ -25,6 +25,11 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
+    public Subject findSubjectById(Long id) {
+        return repository.findById(id).get();
+    }
+
+    @Override
     public Subject updateSubject(Subject subject) {
         return repository.save(subject);
     }

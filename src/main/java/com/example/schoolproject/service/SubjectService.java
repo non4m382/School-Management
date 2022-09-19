@@ -9,6 +9,8 @@ public interface SubjectService {
 
     List<Subject> fetchSubjectList();
 
+    Subject findSubjectById(Long id);
+
     Subject updateSubject(Subject subject);
 
     void deleteSubject(Long subjectId);
